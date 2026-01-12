@@ -47,7 +47,6 @@ pipeline {
         DOCKER_IMAGE = "abhishekf5/ultimate-cicd:${BUILD_NUMBER}"
         // DOCKERFILE_LOCATION = "java-maven-sonar-argocd-helm-k8s/spring-boot-app/Dockerfile"
         REGISTRY_CREDENTIALS = credentials('docker-cred')
->>>>>>> c27bfd8 (Fix Sonar execution using full Maven plugin coordinates)
       }
     }
   }
