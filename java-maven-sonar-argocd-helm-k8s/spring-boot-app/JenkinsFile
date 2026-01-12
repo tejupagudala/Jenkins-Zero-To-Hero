@@ -22,7 +22,7 @@ pipeline {
     stage('Build and Test') {
       steps {
         dir('java-maven-sonar-argocd-helm-k8s/spring-boot-app') {
-          rm -rf /root/.m2/repository
+          sh 'rm -rf /root/.m2/repository'
           sh 'mvn clean package'
         }
       }
